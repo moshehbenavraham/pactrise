@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dealflow</title>
+  <desc id="desc">Sales CRM workspace for pipeline teams.</desc>
+  <rect width="1200" height="630" fill="#f4faf8"/>
+  <rect x="80" y="80" width="1040" height="470" rx="28" fill="#ffffff" stroke="#d8e6e2" stroke-width="2"/>
+  <path d="M165 160h95c80 0 135 58 135 155s-55 155-135 155h-95z" fill="none" stroke="#14201f" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M235 230h35c42 0 65 30 65 85s-23 85-65 85h-35z" fill="none" stroke="#14201f" stroke-width="18" stroke-linejoin="round"/>
+  <text x="470" y="275" fill="#14201f" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="86" font-weight="800">Dealflow</text>
+  <text x="474" y="350" fill="#60716d" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="36" font-weight="500">Pipeline CRM for modern sales teams</text>
+  <rect x="476" y="405" width="520" height="24" rx="12" fill="#e4efec"/>
+  <rect x="476" y="405" width="350" height="24" rx="12" fill="#ff7043"/>
+  <circle cx="1030" cy="417" r="38" fill="#2f9f89"/>
+</svg>

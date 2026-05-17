@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1414" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <title>Dealflow — Pipeline CRM for modern sales teams</title>
+    <meta
+      name="description"
+      content="Dealflow is a pipeline CRM for modern sales teams. Track deals, forecast revenue, and run high-touch sales without the busywork."
+    />
+    <meta name="author" content="Dealflow" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://dealflow.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dealflow" />
+    <meta property="og:url" content="https://dealflow.app/" />
+    <meta property="og:image" content="https://dealflow.app/social-card.svg" />
+    <meta property="og:title" content="Dealflow — Pipeline CRM for modern sales teams" />
+    <meta
+      property="og:description"
+      content="Pipeline CRM that your team will actually use. Track deals, forecast revenue, and spend time selling."
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://dealflow.app/social-card.svg" />
+    <meta name="twitter:title" content="Dealflow — Pipeline CRM for modern sales teams" />
+    <meta
+      name="twitter:description"
+      content="Pipeline CRM that your team will actually use. Track deals, forecast revenue, and spend time selling."
+    />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Anti-FOUC theme bootstrap — applies stored / system theme before paint -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          // Default to "system" so dark-OS visitors with no stored preference
+          // see the dark theme on first paint. next-themes is configured with
+          // `defaultTheme="system"` so this stays in sync after hydration.
+          var theme = stored || "system";
+          var isDark = theme === "dark" || (theme === "system" && prefersDark);
+          if (isDark) {
+            document.documentElement.classList.add("dark");
+          }
+          // Make native form controls and scrollbars track the theme too.
+          document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+        } catch (e) {
+          /* localStorage unavailable — fall back to next-themes after hydration */
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
